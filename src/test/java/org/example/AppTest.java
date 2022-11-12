@@ -1,6 +1,5 @@
 package org.example;
 
-import jdk.jfr.Name;
 import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
@@ -23,13 +22,13 @@ public class AppTest {
         lst = new ArrayList<Integer>();
     }
 
-   @Test
-   @DisplayName("Add something")
-   @RepeatedTest(100)
-   @Timeout(value = 100, unit = TimeUnit.MILLISECONDS)
-   void add() {
-       List expectedList = new ArrayList<Integer>();
-       assertEquals(lst, expectedList);
-   }
+    @Test
+    @DisplayName("Add something")
+    @RepeatedTest(100)
+    @Timeout(value = 100, unit = TimeUnit.MILLISECONDS)
+    void add() {
+        List expectedList = new ArrayList<Integer>();
+        assertEquals(lst, expectedList);
+    }
 
 }
